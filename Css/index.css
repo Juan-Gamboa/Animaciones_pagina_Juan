@@ -1,0 +1,129 @@
+body{
+    background-color: beige;
+    margin: 0;
+}
+.contentHeader{
+    background-color: #ececec;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+.navBusCar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "btnBuscar btnCarrito";
+    width: 80vw;
+    background-color: aqua;
+}
+.btnBuscar{
+    grid-area: btnBuscar;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-items:center;
+}
+.btnCarrito{
+    grid-area: btnCarrito;
+    display:flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    justify-items:space-around;
+}
+.navPage{
+    width: 25%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: azure;
+}
+/*Inicio pagina*/
+.content{
+    min-width: 100vw;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: aquamarine;
+}
+.contentPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.content .inicioPage{
+    background-color: rgba(165, 42, 42, 0.438);
+}
+.imgInfo .imgTitle{
+    position: relative;
+    background-color: rgba(240, 255, 240, 0.301);
+    height: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    bottom: 110px;
+    left: 500px;
+}
+/*tienda*/
+.tiendaP{
+    background-color: rgba(165, 42, 42, 0.438);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.barElement{
+    height: 400px;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.171)
+}
+.detailElement{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+}
+.IconProduct{
+    width: 180px;
+    height: 180px;
+    background-color: blue;
+}
+.desDetail{
+    text-align:left ;
+}
+.imgInfoS{
+    position: relative;
+    background-color: rgba(240, 255, 240, 0.301);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.imgTitle{
+    position: relative;
+    background-color: rgba(240, 255, 240, 0.739);
+    height: 150px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    bottom: 200px;
+}
