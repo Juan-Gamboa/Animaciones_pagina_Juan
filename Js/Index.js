@@ -16,6 +16,12 @@ $(document).ready(function(){
         });
     });
 
+    $('.FindC').click(function() {
+        $('.content').animate({
+            left: '-200vw'
+        });
+    });
+
     $('#verSubtemas').click(function(){
         $('.contentPage').animate({
             top:"-100vh"
