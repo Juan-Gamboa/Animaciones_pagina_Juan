@@ -2,6 +2,10 @@ body{
     background-color: beige;
     margin: 0;
 }
+img {
+    margin-top: 10px;
+    width: 800px;
+}
 .contentHeader{
     background-color: #ececec;
     height: 200px;
@@ -50,6 +54,7 @@ body{
     flex-direction: column;
     position: relative;
     background-color: aquamarine;
+    flex-wrap: wrap;
 }
 .contentPage{
     display: flex;
@@ -59,23 +64,13 @@ body{
     overflow: hidden;
     position: relative;
 }
-.content .inicioPage{
-    background-color: rgba(165, 42, 42, 0.438);
-}
-.imgInfo .imgTitle{
-    position: relative;
-    background-color: rgba(240, 255, 240, 0.301);
-    height: 100px;
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    bottom: 110px;
-    left: 500px;
+.inicioPage{
+    height: 100vh;
+ 
 }
 /*tienda*/
 .tiendaP{
+    flex-wrap: wrap;
     background-color: rgba(165, 42, 42, 0.438);
     display: flex;
     flex-direction: column;
@@ -85,6 +80,7 @@ body{
 .barElement{
     height: 400px;
     width: 80vw;
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -92,6 +88,7 @@ body{
     background-color: rgba(0, 0, 0, 0.171)
 }
 .detailElement{
+    flex-wrap: wrap;
     width: 200px;
     height: 300px;
     display: flex;
@@ -108,8 +105,8 @@ body{
 .desDetail{
     text-align:left ;
 }
-.imgInfoS{
-    position: relative;
+.imgInfo{
+    flex-wrap: wrap;
     background-color: rgba(240, 255, 240, 0.301);
     display: flex;
     flex-direction: column;
@@ -117,6 +114,7 @@ body{
     align-items: center;
 }
 .imgTitle{
+    flex-wrap: wrap;
     position: relative;
     background-color: rgba(240, 255, 240, 0.739);
     height: 150px;
@@ -126,4 +124,121 @@ body{
     justify-content:space-around;
     align-items: center;
     bottom: 200px;
+}
+/*creacion de card*/
+.card{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.card img{
+    position:absolute;
+    top: -5%;
+    width: 100%;
+    transition: transform 0.5s, filter 0.4s;
+}
+.card input[type ="checkbox"]{
+    position:absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.119);
+    backdrop-filter: blur(5px);
+    color: white;
+    appearance: none;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform .4s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.238);
+}
+.card input[type = "checkbox"]:checked{
+    transform: translate(-450%);
+}
+.card input[type = "checkbox"]::before{
+    content: '\f129';
+    position: absolute;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 1em;
+} 
+.card input[type = "checkbox"]:checked ~ img{
+    transform: scale(1.2) rotate(-20deg);
+    filter: blur(10px);
+}
+.card input[type = "checkbox"]:checked::before{
+    content: '\f061';
+}
+.side{
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    background: white;
+    z-index: 5;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px 0 0 0;
+    background: rgba(29, 29, 29, 0.989);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.538);
+    transform: translate(100%);
+    transition: transform .4s;
+}
+.card input[type = "checkbox"]:checked ~ .side{
+    transform: translate(0%);
+}
+.side h3{
+    color: #ffffff;
+    margin: 25px 0 10px 15px;
+}
+.side p{
+    color: #ffffff;
+    margin-left: 15px;
+    font-size: 0.8em;
+}
+/*creacion box*/
+.box{
+    width: 250px; height: 150px; position: relative;
+}
+.box .front,.box .back{
+    position: absolute;
+    width: 250px; height: 150px;
+    background: white;
+    backface-visibility: hidden; cursor: pointer;
+    border-radius: 20px;
+    box-shadow:85px 30px rgba( 163, 61, 21, 0.200 ),
+     e-5px 38px rgba( 115, 55, 212, 8.208);
+    transition: transform .4s;
+}
+.box .back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: perspective(800px) rotateX(-180deg);
+}
+.box .back p{
+    margin: 10px 20px;
+    text-align: center;
+}
+.box .front{
+    border-radius: 0 0 20px 20px;
+}
+.box .front img{
+    width: 100%;
+    height: 100%;
+    border-radius:0 0 20px 20px;
+    position: absolute;
+}
+.box:hover .front{
+    transform: perspective(800px) rotateX(180deg);
+}
+.box:hover .back{
+    border-radius: 20px 20px 0 0;
+    transform: perspective(800px) rotateX(0);
 }
