@@ -11,56 +11,109 @@
   <body>
     <header class="contentHeader">
       <h1>Tienda Web Services</h1>
-      <nav class="navBusCar">
-        <section class="btnBuscar">
-          <button>Buscar</button>
-        </section>
-        <section class="btnCarrito">
-          <button>Login</button>
-          <button>Carrito</button>
-        </section>
-      </nav>
-      <nav class="navPage">
-        <button class="FindI">Inicio</button>
-        <button class="FindT">Tienda</button>
-        <button class="FindC">Contactenos</button>
+      <br>
+      <nav class="navigation">
+        <ul>
+          <li class="list" style="--clr:#31796d">
+            <a href="#">
+              <span class="icon"><lord-icon
+                src="https://cdn.lordicon.com/pvbutfdk.json"
+                trigger="hover"
+                colors ="primary:#FFFFFF" 
+              ></lord-icon></span>
+            </a>
+          </li>
+          <li class="list active" style="--clr:#31796d">
+            <a href="#" class="FindI">
+              <span class="icon"><lord-icon
+                src="https://cdn.lordicon.com/igpbsrza.json"
+                trigger="hover"
+                state="morph-2"
+                colors ="primary:#FFFFFF" 
+              ></lord-icon></span>
+            </a>
+          </li>
+          <li class="list" style="--clr:#31796d">
+            <a href="#" class="FindT">
+              <span class="icon"><lord-icon
+                src="https://cdn.lordicon.com/webtefou.json"
+                trigger="hover"
+                colors ="primary:#FFFFFF" 
+              ></lord-icon></span>
+            </a>
+          </li>
+          <li class="list" style="--clr:#31796d">
+            <a href="#" class="FindC">
+              <span class="icon"><lord-icon
+                src="https://cdn.lordicon.com/dklbhvrt.json"
+                trigger="hover"
+                colors ="primary:#FFFFFF" 
+              ></lord-icon></span>
+            </a>
+          </li>
+          <li class="list" style="--clr:#31796d">
+            <a href="#">
+              <span class="icon"><lord-icon
+                src="https://cdn.lordicon.com/iicmtpsq.json"
+                trigger="hover"
+                colors ="primary:#FFFFFF" 
+              ></lord-icon></span>
+            </a>
+          </li>
+          <li class="list" style="--clr:#31796d">
+            <a href="#">
+              <span class="icon"><lord-icon
+                src="https://cdn.lordicon.com/aoggitwj.json"
+                trigger="hover"
+                colors ="primary:#FFFFFF" 
+              ></lord-icon></span>
+            </a>
+          </li>
+          <div class="indicator"></div>
+        </ul>
       </nav>
     </header>
     <section class="contentPage">
       <div class="content">
         <section class="inicioPage">
-          <article class="imgInfo">
-            <img src="resource/img 1.jpg" alt="" />
-            <div class="imgTitle">
+          <article class="cardInicio">
+            <input type="checkbox" />
+            <img class="imgInicio" src="resource/slider-bg1.jpg" alt="" />
+            <div class="imgSide">
               <h2>Detalle titulo imagen</h2>
               <a href="">Shop</a>
             </div>
           </article>
+          <section class="containerIn">
+            <article class="cardIn">
+               <img src="" alt="">
+            </article>
+          </section>
         </section>
       </div>
 
-      <section class="content tiendaPage">
-        <section class="tiendaP">
+      <section class="content">
+        <section class="tiendaPage">
           <section class="barElement">
             <article class="card">
-              <input type="checkbox">
-              <img src="resource/Figura accion.jpg" alt="">
+              <input type="checkbox" />
+              <img src="resource/Figura accion.jpg" alt="" />
               <div class="side">
                 <h3>Figuras coleccionables</h3>
                 <p>Descripcion de la imagen con texto de relleno lorem ipsum</p>
               </div>
             </article>
             <article class="card">
-              <input type="checkbox">
-              <img src="resource/auto vender.jpg" alt="">
+              <input type="checkbox" />
+              <img src="resource/auto vender.jpg" alt="" />
               <div class="side">
                 <h3>Compra y venta de autos</h3>
                 <p>Descripcion de la imagen con texto de relleno lorem ipsum</p>
               </div>
             </article>
             <article class="card">
-              <input type="checkbox">
-              <img src="resource/Diseño-de-paginas.jpg.png" alt="">
+              <input type="checkbox" />
+              <img src="resource/Diseño-de-paginas.jpg.png" alt="" />
               <div class="side">
                 <h3>Diseño de paginas</h3>
                 <p>Descripcion de la imagen con texto de relleno lorem ipsum</p>
@@ -83,7 +136,7 @@
           <section class="barElement">
             <article class="box">
               <div class="front">
-                <img src="resource/flip 1.jpg" alt="">
+                <img src="resource/flip 1.jpg" alt="" />
               </div>
               <div class="back">
                 <h2>Titulo</h2>
@@ -92,7 +145,7 @@
             </article>
             <article class="box">
               <div class="front">
-                <img src="resource/flip 2.jpg" alt="">
+                <img src="resource/flip 2.jpg" alt="" />
               </div>
               <div class="back">
                 <h2>Titulo</h2>
@@ -101,7 +154,7 @@
             </article>
             <article class="box">
               <div class="front">
-                <img src="resource/flip 3.png" alt="">
+                <img src="resource/flip 3.png" alt="" />
               </div>
               <div class="back">
                 <h2>Titulo</h2>
@@ -113,14 +166,16 @@
       </section>
       <section class="content ContactoPage">
         <div class="container">
-          <img src="resource/icono empresa.png" alt=""/>
-          <img src="resource/facebook-icon.png" alt=""/>
-          <img src="resource/instagram-icon.png" alt=""/>
-          <img src="resource/pinterest-icon.png" alt=""/>
+          <img src="resource/icono empresa.png" alt="" />
+          <img src="resource/facebook-icon.png" alt="" />
+          <img src="resource/instagram-icon.png" alt="" />
+          <img src="resource/pinterest-icon.png" alt="" />
         </div>
       </section>
     </section>
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="Js/Index.js"></script>
+    <script src="Js/normal.js"></script>
   </body>
 </html>
